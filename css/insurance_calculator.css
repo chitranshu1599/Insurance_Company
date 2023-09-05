@@ -1,0 +1,92 @@
+.insurance_calculator {
+    text-align: center;
+}
+
+.insurance_calculator .form-control{
+    width: 25%;
+}
+
+.insurance_calculator_body {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: start;
+}
+
+.calculate-btn{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.calculate-btn .cal-btn{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.coup {
+    display: none;
+}
+
+.fam {
+    display: none;
+}
+
+.par {
+    display: none;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+#new_chq {
+    display: flex;
+    align-items: center;
+}
+
+.select-option{
+    display: flex;
+    align-items: center;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.radio-btn {
+    display: flex;
+    align-items: center;
+    gap: .2rem; 
+}
+
+.option-btns{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: .2rem;
+}
+
+.plan-options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hidden {
+    display: none;
+}
+
+.partens-data {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}

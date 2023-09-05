@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/insurance_calculator.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="insurance_calculator">
+            <h1>Insurance Calculator</h1>
+            <div class="insurance_calculator_body">
+                <h6>Whom do you want the insurance for ?</h6>
+                <div class="option-btns">
+                    <button id="individual" type="button" class="btn">Individual</button>
+                    <button id="couple" type="button" class="btn">Couple</button>
+                    <button id="family" type="button" class="btn">Family</button>
+                    <button id="partens" type="button" class="btn">Parents</button>
+                </div>
+                <div class="ind">
+                    <h6>Select the age of all members</h6>
+                    <div class="member">
+                        <div>
+                            <label for="you">You</label>
+                            <select name="you" id="">
+                                <option selected>Select Age</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="coup">
+                    <h6>Select the age of all members</h6>
+                    <div class="member">
+                        <div>
+                            <label for="you">You</label>
+                            <select name="you" id="">
+                                <option selected>Select Age</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="spouse">Spouse</label>
+                            <select name="spouse" id="">
+                                <option selected>Select Age</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="fam">
+                    <h6>Select the age of all members</h6>
+                    <div class="member">
+                        <div class="info">
+                            <label for="you">You</label>
+                            <select name="you" id="you">
+                                <option selected>Select Age</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="info">
+                            <label for="spouse">Spouse</label>
+                            <select name="spouse" id="spouse">
+                                <option selected>Select Age</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p>Select No of Children</p>
+                    <button class="btn" onclick="add()" id="addBtn">Add</button>
+                    <button class="btn" onclick="remove()" id="removeBtn" disabled>Remove</button>
+                    <div class="row" id="new_chq"></div>
+                    <input type="hidden" value="0" id="total_chq">
+                </div>
+                <div class="par">
+                    <label for="checkboxFather">Father:</label>
+                    <input type="checkbox" id="checkboxFather">
+                    <label for="checkboxMother">Mother:</label>
+                    <input type="checkbox" id="checkboxMother">
+                    <div class="partens-data">
+                    <div id="fatherDiv" class="hidden">
+                        <div class="info">
+                            <label for="father">Father</label>
+                            <select name="father" id="father">
+                                <option selected>Select Age</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div id="motherDiv" class="hidden">
+                        <div class="info">
+                            <label for="mother">Mother</label>
+                            <select name="mother" id="mother">
+                                <option selected>Select Age</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="insurance_calculator_foot">
+                    <h6>Where does your family lives in ?</h6>
+                    <input type="text">
+                    <div class="plans">
+                        <h6>Choose required coverage for your family?</h6>
+                        <div class="plan-options">
+                            <button class="btn">2 Lac</button>
+                            <button class="btn">3 Lac</button>
+                            <button class="btn">5 Lac</button>
+                            <button class="btn">10 Lac</button>
+                            <button class="btn">25 Lac</button>
+                            <select name="mother" id="mother">
+                                <option selected>Coverage</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-danger">Calculate</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./js/insurance_calculator.js"></script>
+</body>
+
+</html>

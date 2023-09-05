@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GoSavvy</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <h1 class="m-0"><img class="img-fluid me-3" src="img/icon/icon-02-primary.png" alt="">GoSavvy</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto bg-light rounded pe-4 py-3 py-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="insurance-service.html" class="nav-item nav-link">Insurance Services</a>
+                <a href="financial-service.html" class="nav-item nav-link">Financial Services</a>
+                <!-- <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu bg-light border-0 m-0">
+                        <a href="feature.html" class="dropdown-item">Features</a>
+                        <a href="appointment.html" class="dropdown-item">Appointment</a>
+                        <a href="team.html" class="dropdown-item">Team Members</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div> -->
+                <a href="about.html" class="nav-item nav-link">About Us</a>
+                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            </div>
+        </div>
+        <!-- <a href="" class="btn btn-primary px-3 d-none d-lg-block">Get A Quote</a> -->
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" style="height: 70vh; object-fit: cover;" src="img/banner-1.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <h1 class="display-3 text-dark mb-4 animated slideInDown">Insurance Services</h1>
+                                    <p class="fs-5 text-body mb-5">When it comes to safeguarding what matters most, our insurance services have you covered. Whether it's protecting your health or securing your assets, our range of insurance plans offers comprehensive coverage for every stage of life.</p>
+                                    <a href="" class="btn btn-primary py-3 px-5">More Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" style="height: 70vh; object-fit: cover;" src="img/banner-2.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <h1 class="display-3 text-white mb-4 animated slideInDown">Financial Services</h1>
+                                    <p class="fs-5 text-white mb-5">Our financial services are designed to empower you to make the most of your financial resources and achieve your life goals. With a team of seasoned experts, we provide personalized strategies to help you build and manage your wealth effectively.</p>
+                                    <a href="" class="btn btn-primary py-3 px-5">More Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon me-5" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon ms-5" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative overflow-hidden rounded ps-5 pt-5 h-100" style="min-height: 400px;">
+                        <img class="position-absolute w-100 h-100" src="img/team.jpg" alt="" style="object-fit: cover;">
+                        <div class="position-absolute top-0 start-0 bg-white rounded pe-3 pb-3" style="width: 200px; height: 200px;">
+                            <div class="d-flex flex-column justify-content-center text-center bg-primary rounded h-100 p-3">
+                                <h1 class="text-white mb-0">25</h1>
+                                <h2 class="text-white">Years</h2>
+                                <h5 class="text-white mb-0">Experience</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <h1 class="display-6 mb-5">We're Here To Assist You With Exploring Protection</h1>
+                        <p class="fs-5 text-primary mb-4">At GoSavvy, we're your one-stop for health and wealth. Trust our experts to guide you towards a secure and prosperous future.</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 me-3" src="img/icon/icon-04-primary.png" alt="">
+                                    <h5 class="mb-0">Insurance Services</h5>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="flex-shrink-0 me-3" src="img/icon/icon-03-primary.png" alt="">
+                                    <h5 class="mb-0">Financial Services</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-4">Our integrated approach offers security for your health and wealth, all in one place. Count on our dedicated team and customized services to lead you towards a prosperous future.</p>
+                        <div class="border-top mt-4 pt-4">
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0 rounded-circle me-3" src="img/profile.jpg" alt="">
+                                <h5 class="mb-0">Call Us: +012 345 6789</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid overflow-hidden my-5 px-lg-0">
+        <div class="container facts px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 facts-text px-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="h-100 px-4 ps-lg-0">
+                        <h1 class="text-white mb-4">Who We Are ?</h1>
+                        <p class="text-light mb-5">At GoSavvy, we understand that life is a journey filled with unexpected twists. That's why we're here – to provide you with the peace of mind that comes from having a reliable partner for both your health insurance needs and financial aspirations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 facts-counter px-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="h-100 px-4 ps-lg-0">
+                        <h1 class="mb-4">Our Mission</h1>
+                        <p class="mb-5">Our mission is to empower you to make informed decisions about your health and finances. Through our comprehensive health insurance plans and expert financial services, we aim to ensure your well-being today and secure your dreams for tomorrow.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- Features Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="display-6 mb-5">Few Reasons Why People Choosing Us!</h1>
+                    <p class="mb-4">At GoSavvy, we understand that life is a journey filled with unexpected twists. That's why we're here – to provide you with the peace of mind that comes from having a reliable partner for both your health insurance needs and financial aspirations.</p>
+                    <div class="row g-3">
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="bg-light rounded h-100 p-3">
+                                <div class="bg-white d-flex flex-column justify-content-center text-center rounded h-100 py-4 px-3">
+                                    <img class="align-self-center mb-3" src="img/icon/icon-06-primary.png" alt="">
+                                    <h5 class="mb-0">Holistic Approach</h5>
+                                    <p class="my-3">We offer both health insurance and financial services under one roof, providing you with a holistic solution for your well-being.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                            <div class="bg-light rounded h-100 p-3">
+                                <div class="bg-white d-flex flex-column justify-content-center text-center rounded py-4 px-3">
+                                    <img class="align-self-center mb-3" src="img/icon/icon-03-primary.png" alt="">
+                                    <h5 class="mb-0">Expert Guidance</h5>
+                                    <p class="my-3"> Our team of seasoned professionals is committed to guiding you through complex financial decisions and insurance choices.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="bg-light rounded h-100 p-3">
+                                <div class="bg-white d-flex flex-column justify-content-center text-center rounded py-4 px-3">
+                                    <img class="align-self-center mb-3" src="img/icon/icon-04-primary.png" alt="">
+                                    <h5 class="mb-0">Calculators</h5>
+                                    <p class="my-3">Explore our EMI and Insurance Premium calculators to plan your expenses and coverage effectively.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                            <div class="bg-light rounded h-100 p-3">
+                                <div class="bg-white d-flex flex-column justify-content-center text-center rounded h-100 py-4 px-3">
+                                    <img class="align-self-center mb-3" src="img/icon/icon-07-primary.png" alt="">
+                                    <h5 class="mb-0">Money Saving</h5>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="position-relative rounded overflow-hidden h-100" style="min-height: 400px;">
+                        <img class="position-absolute w-100 h-100" src="img/choose-us.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Insurance Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto" style="max-width: 500px;">
+                <h1 class="display-6 mb-5">Insurance Services</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded h-100 p-5">
+                        <div class="d-flex align-items-center ms-n5 mb-4">
+                            <div class="service-icon flex-shrink-0 bg-primary rounded-end me-4">
+                                <img class="img-fluid" src="img/icon/icon-10-light.png" alt="">
+                            </div>
+                            <h4 class="mb-0">Life Insurance</h4>
+                        </div>
+                        <p class="mb-4">Life is unpredictable, but your loved ones' financial security shouldn't be. Our life insurance plans offer peace of mind by ensuring your family's well-being is protected in the event of the unexpected.</p>
+                        <a class="btn btn-light px-3" href="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded h-100 p-5">
+                        <div class="d-flex align-items-center ms-n5 mb-4">
+                            <div class="service-icon flex-shrink-0 bg-primary rounded-end me-4">
+                                <img class="img-fluid" src="img/icon/icon-01-light.png" alt="">
+                            </div>
+                            <h4 class="mb-0">Health Insurance</h4>
+                        </div>
+                        <p class="mb-4">Our health insurance plans are designed to provide you and your loved ones with access to quality medical care without the burden of financial stress. With customizable options and a network of trusted healthcare providers, you can rest easy knowing your health is in good hands.</p>
+                        <a class="btn btn-light px-3" href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Insurance Service End -->
+
+    <!-- Finance Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto" style="max-width: 500px;">
+                <h1 class="display-6 mb-5">Financial Services</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded h-100 p-5">
+                        <div class="d-flex align-items-center ms-n5 mb-4">
+                            <div class="service-icon flex-shrink-0 bg-primary rounded-end me-4">
+                                <img class="img-fluid" src="img/icon/icon-07-light.png" alt="">
+                            </div>
+                            <h4 class="mb-0">Investment Planning</h4>
+                        </div>
+                        <p class="mb-4">Unlock the potential of your money with expert investment planning. We'll work with you to create a diversified investment portfolio tailored to your risk tolerance and financial aspirations.</p>
+                        <a class="btn btn-light px-3" href="">Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded h-100 p-5">
+                        <div class="d-flex align-items-center ms-n5 mb-4">
+                            <div class="service-icon flex-shrink-0 bg-primary rounded-end me-4">
+                                <img class="img-fluid" src="img/icon/icon-06-light.png" alt="">
+                            </div>
+                            <h4 class="mb-0">Retirement Solutions</h4>
+                        </div>
+                        <p class="mb-4">Your golden years should be worry-free. Our retirement solutions are crafted to ensure you have a comfortable and secure retirement, allowing you to enjoy the fruits of your labor.</p>
+                        <a class="btn btn-light px-3" href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Finance Service End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="display-6 mb-5">OUR PARTNERS : INSURANCE COMPANIES</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/CARE-HEALTH.png" alt="">
+                            <h5>CARE HEALTH INSURANCE</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/STAR-HEALTH.png" alt="">
+                            <h5>STAR HEALTH INSURANCE</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/TATA-AIG.jpg" alt="">
+                            <h5>TATA AIG HEALTH INSURANCE</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/BAJAJ-ALLIANZ.jpg" alt="">
+                            <h5>BAJAJ ALLIANZ HEALTH INSURANCE</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/NIVA-BUPA.png" alt="">
+                            <h5>NIVA BUPA HEALTH INSURANCE</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/IFFCO-TOKIO.jpg" alt="">
+                            <h5>IFFCO TOKIO HEALTH INSURANCE</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/ICICI-LOMBARD.png" alt="">
+                            <h5>ICICI LOMBARD</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/RELIANCE.png" alt="">
+                            <h5>RELIANCE HEALTH INSURANCE</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/ACKO.png" alt="">
+                            <h5>ACKO HEALTH INSURANCE</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/MANIPAL-CIGNA.jpg" alt="">
+                            <h5>MANIPAL CIGNA HEALTH INSURANCE</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/HDFC-ERGO.jpeg" alt="">
+                            <h5>HDFC ERGO</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/MAX-BUPA.png" alt="">
+                            <h5>MAX BUPA HEALTH INSURANCE</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+     <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="display-6 mb-5">OUR PARTNERS : FINANCIAL INSTITUTE</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/BAJAJ-FINSERV.png" alt="">
+                            <h5>BAJAJ FINSERV</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/ICICI-BANK.png" alt="">
+                            <h5>ICICI BANK</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/TATA-CAPITAL.jpg" alt="">
+                            <h5>TATA CAPITAL</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/KOTAK-MAHINDRA.jpg" alt="">
+                            <h5>KOTAK MAHINDRA</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/HDFC-BANK.png" alt="">
+                            <h5>HDFC BANK</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/ADITYA-BIRLA-CAPITAL.jpg" alt="">
+                            <h5>ADITYA BIRLA CAPITAL</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/AXIS-BANK.jpg" alt="">
+                            <h5>AXIS BANK</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/IDFC-FIRST-BANK.png" alt="">
+                            <h5>IDFC FIRST BANK</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/STANDARD-CHARERED.png" alt="">
+                            <h5>STANDARD CHARERED</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/DCB-BANK.png" alt="">
+                            <h5>DCB BANK</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/HERO-FIN-CORP.png" alt="">
+                            <h5>HERO FIN CORP</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/PAY-SENSE.png" alt="">
+                            <h5>PAY SENSE</h5>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded mx-auto mb-4" src="img/FLUTTRON.jpg" alt="">
+                            <h5>FLUTTRON</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h1 class="text-white mb-4"><img class="img-fluid me-3" src="img/icon/icon-02-light.png" alt="">GoSavvy</h1>
+                    <p>At GoSavvy, We're here to be your reliable partner for both health insurance and financial solutions.</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">GoSavvy Management Consulting</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a href="https://engineeringinnovations.in/">Engineering Innovations</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
