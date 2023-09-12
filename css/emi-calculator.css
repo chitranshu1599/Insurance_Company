@@ -1,0 +1,128 @@
+
+.emi{
+    overflow: hidden;
+}
+
+/* Style for all input containers */
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px;
+}
+.input-container label{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+}
+.input-container input{
+    font-size: larger;
+    border:none;
+    box-shadow: 0px 0px 2px 1px rgb(152, 145, 145);
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+    outline: none;
+    width: 50%;
+}
+.input-container input:hover{
+    box-shadow: 0px 0px 2px 1px rgb(37, 34, 34);
+}
+
+/* submit button style */
+.submit-container{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+#calculate{    
+    padding:4px 10px;
+    font-size: larger;
+    background-color: rgb(182, 53, 53);
+    border-radius: 3px;
+    color: white;
+    border:none;
+    outline: none;
+    box-shadow: 2px 3px 4px rgb(55, 52, 52);
+    transition: 0.4s;
+    cursor: pointer;
+}
+#calculate:active{
+    box-shadow: none;
+    font-size:large;
+}
+
+/* Loan duration style */
+#loanTenure{
+    width: 58px;
+    margin-left: 65px;
+    margin-right: 0;        
+    /* background-color: aqua; */
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.radio-container{    
+    width: 58%; 
+    display: flex;
+    margin-left: 0;
+}
+.radio-container input[type="radio"]{
+    display: none;
+}
+.radio-container label{
+    background-color: #ffffff;
+    padding: 3.7px 5px;        
+    box-shadow: 0px 0px 2px 1px rgb(152, 145, 145);
+    cursor: pointer;
+    transition: all 0.3s;    
+    
+}
+#month + label{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.radio-container label:hover{
+    background-color: #2974FF;
+    border-color: #2974FF;
+    color:white;
+} 
+.radio-container input[type="radio"]:checked+label{
+    background-color: #2974FF;
+    border-color: #2974FF;
+    color: white;
+} 
+
+/* Output */
+
+.output{
+    margin: 10px;    
+    /* box-shadow: 0px 0px 5px rgb(51, 48, 48); */
+    display: flex;
+    flex-direction: row;
+    /* display: none; */
+}
+
+.output .loan-text{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.output p{
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 4px;
+    margin:4px;    
+    box-shadow: 0px 0px 5px rgb(51, 48, 48);
+    color:rgb(62, 58, 58);
+    font-weight: 550;
+    
+
+}
+.output p span{
+    float: right;
+    word-wrap: break-word;
+    color: rgb(101, 17, 41);
+    font-weight: bolder;
+    font-size: larger;
+}

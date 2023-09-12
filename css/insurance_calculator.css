@@ -26,16 +26,21 @@
     text-transform: uppercase;
 }
 
-.coup {
-    display: none;
+.range-bar{
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.fam {
+/* .coup {
     display: none;
-}
+} */
+
+/* .fam {
+    display: none;
+} */
 
 .par {
-    display: none;
+    /* display: none; */
     margin-top: 15px;
     margin-bottom: 30px;
 }
@@ -67,6 +72,12 @@
 .option-btns{
     margin-top: 15px;
     margin-bottom: 30px;
+}
+
+.option-btns .active{
+    color: #fff;
+    background-color: #015FC9;
+    border-color: #015FC9;
 }
 
 .info {

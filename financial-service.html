@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Financial Service</title>
+    <title>GoSavvy-Financial Service</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -14,7 +14,8 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -29,11 +30,14 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/emi-calculator.css">
+    <link rel="stylesheet" href="css/insurance_calculator.css">
 </head>
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
@@ -42,7 +46,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <h1 class="m-0"><img class="img-fluid me-3" src="img/icon/icon-02-primary.png" alt="">GoSavvy</h1>
+            <img class="img-fluid me-3" src="/img/gosavvy-logo.png" alt="">
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -86,6 +90,85 @@
     </div>
     <!-- Page Header End -->
 
+    <!-- Calculator start -->
+
+    <section class="container">
+        <div class="insurance_calculator">
+            <h1 class="display-6 mb-5">EMI Calculator</h1>
+            <div class="insurance_calculator_body wow fadeInUp">
+                <div class="emi">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <form>
+                                <div class="input-container">
+                                    <label for="amount">Loan Amount(₹)</label>
+                                    <input type="number" id="amount" value="50000" class="calculate_emi" required />
+                                </div>
+                                <div class="range-bar">
+                                    <input type="range" id="amount_range" style="width: 90%" min="0" max="70000000"
+                                        step="1000" class="calculate_emi" />
+                                </div>
+                                <div class="input-container">
+                                    <label for="interest">Interest Rate(%)</label>
+                                    <input type="number" id="interest" step="0.01" value="15" class="calculate_emi"
+                                        required />
+                                </div>
+                                <div class="range-bar">
+                                    <input type="range" id="interest_range" style="width: 90%" min="0" max="20"
+                                        step=".25" class="calculate_emi" />
+                                </div>
+                                <div class="input-container loan-tenure-container">
+                                    <label for="loanTenure">Loan Tenure</label>
+                                    <div class="radio-container">
+                                        <input type="text" id="loanTenure" value="10" required class="calculate_emi" />
+                                        <input type="radio" name="btn" id="year" class="tenure_select" value="year"
+                                            checked /><label for="year">Year</label>
+                                        <input type="radio" name="btn" id="month" class="tenure_select"
+                                            value="month" /><label for="month">Month</label>
+                                    </div>
+                                </div>
+                                <div class="d-none range-bar " id="tenure-range-1">
+                                    <input type="range" id="yealry_range" style="width: 90%" min="0" max="30" step=".5"
+                                        class="tenure_range calculate_emi" />
+                                </div>
+                                <div style="text-align: center" class="d-none " id="tenure-range-2">
+                                    <input type="range" id="monthly_range" style="width: 90%" min="0" max="360" step="6"
+                                        class="tenure_range calculate_emi" />
+                                </div>
+                                <div class="row">
+                                    <div class="output">
+                                        <div class="col-lg-4">
+                                            <div class="loan">
+                                                <h4 class="loan-text">EMI</h4>
+                                                <p id="emi">₹</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="interest">
+                                                <h4 class="loan-text">Total Interest</h4>
+                                                <p id="totalInterest">₹</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="payment">
+                                                <h4 class="loan-text">Total Payment</h4>
+                                                <p id="totalPayment">₹</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-4">
+                            <div id="chart_div"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator end -->
 
     <!-- Service Start -->
     <div class="container-xxl py-5">
@@ -106,7 +189,9 @@
                 </div>
                 <div class="col-lg-8 col-md-8 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item rounded h-100 p-5">
-                        <p class="my-4">Unlock the potential of your money with expert investment planning. We'll work with you to create a diversified investment portfolio tailored to your risk tolerance and financial aspirations.</p>
+                        <p class="my-4">Unlock the potential of your money with expert investment planning. We'll work
+                            with you to create a diversified investment portfolio tailored to your risk tolerance and
+                            financial aspirations.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.3s">
@@ -121,14 +206,16 @@
                 </div>
                 <div class="col-lg-8 col-md-8 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item rounded h-100 p-5">
-                        <p class="my-4">Your golden years should be worry-free. Our retirement solutions are crafted to ensure you have a comfortable and secure retirement, allowing you to enjoy the fruits of your labor.</p>
+                        <p class="my-4">Your golden years should be worry-free. Our retirement solutions are crafted to
+                            ensure you have a comfortable and secure retirement, allowing you to enjoy the fruits of
+                            your labor.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Service End -->
-        
+
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center">
@@ -200,8 +287,9 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6">
-                    <h1 class="text-white mb-4"><img class="img-fluid me-3" src="img/icon/icon-02-light.png" alt="">GoSavvy</h1>
-                    <p>At GoSavvy, We're here to be your reliable partner for both health insurance and financial solutions.</p>
+                    <img class="img-fluid me-3 w-50" src="/img/gosavvy-logo.png" alt="">
+                    <p>At GoSavvy, We're here to be your reliable partner for both health insurance and financial
+                        solutions.</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -262,9 +350,12 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="./js/emi_calculator.js"></script>
 </body>
 
 </html>

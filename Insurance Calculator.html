@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insurance Calculator</title>
+    <title>GoSavvy-Insurance Calculator</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/insurance_calculator.css">
@@ -17,12 +17,12 @@
             <div class="insurance_calculator_body">
                 <h6>Whom do you want the insurance for ?</h6>
                 <div class="option-btns">
-                    <button id="individual" type="button" class="btn">Individual</button>
-                    <button id="couple" type="button" class="btn">Couple</button>
-                    <button id="family" type="button" class="btn">Family</button>
-                    <button id="partens" type="button" class="btn">Parents</button>
+                    <button id="individual" type="button" class="btn type_btn active" select-type="individual">Individual</button>
+                    <button id="couple" type="button" class="btn type_btn" select-type="couple">Couple</button>
+                    <button id="family" type="button" class="btn type_btn" select-type="family">Family</button>
+                    <button id="partens" type="button" class="btn type_btn" select-type="parents">Parents</button>
                 </div>
-                <div class="ind">
+                <div class="ind d-none" id="individual_div">
                     <h6>Select the age of all members</h6>
                     <div class="member">
                         <div>
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="coup">
+                <div class="coup d-none" id="couple_div">
                     <h6>Select the age of all members</h6>
                     <div class="member">
                         <div>
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="fam">
+                <div class="fam d-none" id="family_div">
                     <h6>Select the age of all members</h6>
                     <div class="member">
                         <div class="info">
@@ -87,7 +87,7 @@
                     <div class="row" id="new_chq"></div>
                     <input type="hidden" value="0" id="total_chq">
                 </div>
-                <div class="par">
+                <div class="par d-none" id="parents_div">
                     <label for="checkboxFather">Father:</label>
                     <input type="checkbox" id="checkboxFather">
                     <label for="checkboxMother">Mother:</label>
@@ -124,11 +124,11 @@
                     <div class="plans">
                         <h6>Choose required coverage for your family?</h6>
                         <div class="plan-options">
-                            <button class="btn">2 Lac</button>
-                            <button class="btn">3 Lac</button>
-                            <button class="btn">5 Lac</button>
-                            <button class="btn">10 Lac</button>
-                            <button class="btn">25 Lac</button>
+                            <button class="btn coverage_btn">2 Lac</button>
+                            <button class="btn coverage_btn">3 Lac</button>
+                            <button class="btn coverage_btn">5 Lac</button>
+                            <button class="btn coverage_btn">10 Lac</button>
+                            <button class="btn coverage_btn">25 Lac</button>
                             <select name="mother" id="mother">
                                 <option selected>Coverage</option>
                                 <option value="1">One</option>
